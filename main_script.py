@@ -17,7 +17,7 @@ import stock_trade_indicators as sti
 
 # Define Methods
 def __main__():
-    stock_data = dh.StockData("TSLA")
+    stock_data = dh.StockData("AMZN")
     indicator = sti.CrossMovingAverageIndicator(stock_data.stock_data_struct, 'Close')
     indicator.visualise_indicator_strategy()
 
